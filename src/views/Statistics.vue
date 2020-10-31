@@ -450,7 +450,7 @@ export default {
 				})
 			}
 		},
-		getAttendanceForLecture(lecture) {	
+		getAttendanceForLecture(lecture) {
 			let lectureStudents = Object.keys(lecture.students)
 			let lectureLive = 0
 			let lecturePlayback = 0

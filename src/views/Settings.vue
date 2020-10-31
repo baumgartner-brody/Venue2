@@ -82,7 +82,6 @@
           <div v-else>
             <ChangePassword v-if="mode == 'change_password'" :current_user="current_user" :complete="actionComplete" />
           </div>
-
     </div>
 
   </div>
