@@ -75,6 +75,10 @@ h1,h2,h4 {
   color: var(--dashboard-text-color);
 }
 
+.svg-color {
+  filter: var(--widgets-color);
+}
+
 .venue-body-container {
   margin: 2rem 8rem;
   text-align: left;
@@ -902,14 +906,6 @@ a:hover {
   color: var(--button-text-hover);
 }
 
-/* This is because white is not 508 with halloween *
- * Take this block out when halloween is over 
- * Also change invert(0) back to (1) */
-.btn.btn-primary img,
-.btn.btn-secondary img {
-  filter: brightness(0) !important;
-}
-
 .btn.btn-primary:active:focus,
 .btn.btn-secondary:active:focus {
   outline: none !important;
@@ -920,7 +916,7 @@ a:hover {
 .btn.btn-primary:focus img,
 .btn.btn-primary:active img,
 .btn.btn-primary:target img {
-  filter: var(--widgets-color) invert(0);
+  filter: var(--widgets-color) invert(1);
   transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -941,7 +937,7 @@ a:hover {
 .btn.btn-secondary:focus img,
 .btn.btn-secondary:active img,
 .btn.btn-secondary:target img {
-  filter: var(--widgets-color) invert(0);
+  filter: var(--widgets-color) invert(1);
   transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -964,7 +960,7 @@ input,select {
   transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* take out after halloween? */
+/* Auto fill styling */
 input:-webkit-autofill {
   -webkit-text-fill-color: var(--input-text) !important;
   -webkit-box-shadow: 0 0 0px 1000px var(--input-background) inset;
