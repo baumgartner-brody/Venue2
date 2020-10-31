@@ -44,7 +44,6 @@ export default {
 	},
 	created() {
 		this.options.forEach(option => {
-			
 			if(this.preselected) {
 				let found = this.preselected.find(a => a._id == option._id || a === option)
 				if(found) {
@@ -55,6 +54,7 @@ export default {
 			} else {
 				this.unselected.push(option)
 			}
+			
 		})
 		if(this.sortBy) {
 			this.unselected.sort((a,b) => a[this.sortBy] > b[this.sortBy] ? 1 : -1)
@@ -124,9 +124,6 @@ export default {
 </script>
 
 <style scoped>
-.svg-color {
-	filter: var(--widgets-color);
-}
 
 .multiselect {
 	text-align: left;
