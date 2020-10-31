@@ -131,7 +131,6 @@
   import Courses from '@/components/admin/Course/Courses';
   import Instructors from '@/components/admin/User/Instructors';
   import Students from '@/components/admin/User/Students';
-
   export default {
     name: 'EditSection',
     components: {
@@ -220,7 +219,6 @@ label {
 #update-btn {
   margin: 2rem;
 }
-
 .row {
   margin: 1rem;
 }

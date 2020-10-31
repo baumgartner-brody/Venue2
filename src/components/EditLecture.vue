@@ -133,7 +133,6 @@ export default {
   },
   created() {
     this.getLecture();
-
   },
   methods: {
     getLecture() {
@@ -187,12 +186,10 @@ export default {
 #edit-lecture {
   padding: 2rem;
 }
-
 .row {
   margin: 0.75rem 0rem;
   padding: 0;
 }
-
 #lect-label-settings > *,
 #lect-current-settings > *,
 #lect-updated-settings > * {
@@ -201,28 +198,22 @@ export default {
   min-height: 3rem;
   margin-bottom: 0.5rem;
 }
-
 #lect-label-settings > *:not(:first-child) {
   text-align: right;
 }
-
 .gap1 {
   margin-top: 3.75rem;
 }
-
 .gap2 {
   margin-top: 7.25rem;
 }
-
 h3 {
   font-style: italic;
 }
-
 label {
   width: 100%;
   text-align: right;
 }
-
 .col-md-6:nth-child(2) > input, p {
   text-align: left;
   width: 80%;
